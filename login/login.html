@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animated Login Form</title>
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div id = "id01">
+    <div>
+      <form class="box" action="login.html" method="post">
+        <h1>Login</h1>
+        <input type="text" id = "email" name="email" class = "email" placeholder="Email">
+        <input type="password" id = "password" name="password" class = "password" placeholder="Password">
+        <input type="submit" name="" value="Login">
+      </form>
+    </div>
+
+  </div>
+  <style>
+    body {
+      background-image: url('background3.jpg');
+    }
+    </style>
+  <script language="javascript" type="text/javascript" src="index.js"></script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
