@@ -6,11 +6,30 @@
 .u-section-1 .u-text-2 {text-transform: uppercase; font-weight: 900; font-size: 9.375rem; line-height: 0.8; margin: 20px 0 0}
 .u-section-1 .u-text-3 {text-transform: uppercase; letter-spacing: 2px; font-weight: 400; margin: 13px 248px 0 0} 
 
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    }
+
 header {
     width: 100%;
     height: 100vh;
     background: url(images/background.jpg) no-repeat 50% 50%;
     background-size: cover;
+}
+
+ul {
+    margin: 0;
+    padding-top: 0px;
+    top: 0;
+  }
+
+html, head, body{
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    top: 0;
 }
 
 .content {
@@ -22,30 +41,53 @@ header {
 }
 
 .logo {
-    /* display: block; */
-   margin-left: auto;
-  margin-right: auto;
-  max-width: 20%;
-  max-height: 10%;
+    /* margin-left: auto;
+  margin-right: auto; */
+    display: inline-block;
+  max-width: 30%;
+  max-height: 10%; 
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-left: 37%;
+  position: fixed;
+}
+
+.logo2 {
+    /* margin-left: auto;
+  margin-right: auto; */
+    display: inline-block;
+  max-width: 30%;
+  max-height: 10%; 
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-left: 0%;
+  position: fixed;
+}
+
+.menunav {
+    margin: 0px;
+    padding-top: 0px;
 }
 
 nav {
     position: fixed;
     width: 100%;
+    top: -20px;
     line-height: 60px;
 }
 
 nav ul {
     line-height: 60px;
     list-style: none;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0);
     overflow: hidden;
-    color: #090;
+    color: rgb(0, 0, 0);
     padding: 0;
     text-align: right;
     margin: 0;
     padding-right: 40px;
     transition: 1s;
+    padding: 0;
 }
 
 nav.black ul {
@@ -54,7 +96,7 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 16px 40px; 
 }
 
 nav ul li a {
@@ -63,7 +105,8 @@ nav ul li a {
     font-size: 16px;
 }
 
-.menu-icon {
+
+/* .menu-icon {
     line-height: 60px;
     width: 100%;
     background: #000;
@@ -73,6 +116,40 @@ nav ul li a {
     cursor: pointer;
     color: #fff;
     display: none;
+} */
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0px;
+          text-align: right;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
 }
 
 @media (max-width: 1199px){ .u-section-1 .u-sheet-1 {min-height: 555px}

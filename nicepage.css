@@ -3636,10 +3636,8 @@ details,
 figcaption,
 figure,
 footer,
-header,
 main,
 menu,
-nav,
 section,
 summary {
   display: block;
@@ -4891,12 +4889,10 @@ body,
 aside,
 .u-sidebar-block,
 section,
-header,
 footer {
   position: relative;
 }
 section > *,
-header > *,
 footer > *,
 .u-sheet > * {
   position: relative;
@@ -10796,7 +10792,7 @@ section.u-image,
     position: -webkit-sticky;
   }
 }
-.u-overlap .u-header {
+.u-overlap  {
   position: absolute;
   top: 0;
   right: 0;
@@ -12846,7 +12842,7 @@ section.u-image,
   padding: 8px 0;
   white-space: normal;
 }
-.u-nav,
+/* .u-nav,
 .u-nav-item {
   position: relative;
 }
@@ -12879,7 +12875,7 @@ section.u-image,
 .u-nav-container .u-nav-item:hover > .u-nav-popup:not(.fake) {
   visibility: visible;
   pointer-events: auto;
-}
+} */
 .u-menu-mega .u-nav-container .u-mega-popup {
   min-height: 200px;
   white-space: normal;
