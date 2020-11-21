@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API KEY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">  
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+  background-image: url('key5.jpg');
+  background-size: 100%;
+}
+</style>
+</head>
+<body>
+
+<h2>API Key Generated</h2>
+<p>Please copy and paste it into a secure place. Input the api key and your email into the config.yml file generated when you first run the server with Auto-Tune</p>
+
+<div id = "result">
+</div>
+<script>
+  console.log(localStorage.getItem("apikey"))
+    document.getElementById("result").innerHTML = localStorage.getItem("apikey")
+</script>
+<a href="../index.html">
+    <img src="home.png" class="homeLink">
+  </a>
+  <a href="../index.html">
+    <img src="logo2.png" class="homeLink2">
+  </a>
+</body>
+
+</html>
