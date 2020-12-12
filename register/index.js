@@ -34,7 +34,9 @@ form.addEventListener('submit', (event) => {
     const email = formData.get('email');
     const name = formData.get('uname');
     const password = formData.get('password');
-    console.log('form submitted')
+
+    form.submitButton.disabled = true;
+    form.submitButton.value = "Generating Key...";
 
     localStorage.removeItem("apikey");
 
@@ -55,6 +57,8 @@ form.addEventListener('submit', (event) => {
     .then(response => {
         
         if(!response.ok){
+            form.submitButton.disabled = false;
+            form.submitButton.value = "Submit";
             alert("Invalid request. Ensure username and password are longer than 6 characters and email is not already registered to an Autotune account")
             throw new Error('Invalid Request')
         }else{
