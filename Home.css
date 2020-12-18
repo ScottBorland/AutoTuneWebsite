@@ -75,6 +75,13 @@ html, head, body{
   margin-right: 40%;
   position: fixed;
 }
+.logo4 {
+    position: absolute;
+   top: 12px;
+   left: 200px;
+   height: 100px;
+    width: 200px;
+}
 
 .menunav {
     margin: 0px;

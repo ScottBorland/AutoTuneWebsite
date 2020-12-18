@@ -45,7 +45,6 @@ form.addEventListener('submit', (event) => {
         "name": name,
         "password": password
     };
-    console.log(user)
 
     fetch(API_URL, {
         method: 'POST',
